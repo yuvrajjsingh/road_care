@@ -22,6 +22,11 @@ def init_db():
     conn.commit()
     conn.close()
 
+
+@app.route("/")
+def home():
+    return render_template("index.html")
+
 @app.route("/index")
 def index():
     return render_template("index.html")
