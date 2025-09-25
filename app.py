@@ -33,11 +33,21 @@ def index():
 
 @app.route("/submit", methods=["POST"])
 def submit():
+    authority_emails = {
+        "PWD": "pwd@gov.com",
+      "LDA": "lda@gov.com",
+      "Nagar Nigam": "nagarnigam@gov.com",
+      "Municipality": "municipality@gov.com",
+      "Urban development": "urbandev@gov.com"
+    }
+
     name = request.form["name"]
     location = request.form["location"]
     issue = request.form["issue"]
     severity = request.form["severity"]
     comments = request.form["comments"]
+    authority = request.form["authority"]
+    authority_email = authority_emails.get(authority, "")
 
     photo_file = request.files["photo"]
     photo_path = None
@@ -52,11 +62,14 @@ def submit():
     conn.commit()
     conn.close()
 
-    return redirect(url_for("thankyou"))
+    # Pass authority and email to thank you page
+    return redirect(url_for("thankyou", authority=authority, email=authority_email))
 
 @app.route("/thankyou")
 def thankyou():
-    return render_template("thankyou.html")
+    authority = request.args.get("authority", "PWD")
+    email = request.args.get("email", "pwd@example.com")
+    return render_template("thankyou.html", authority=authority, email=email)
 
 @app.route("/report")
 def reports():

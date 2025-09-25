@@ -9,12 +9,13 @@
 
 <body class="d-flex align-items-center justify-content-center" style="min-height:100vh; background:#00c6ff;">
   <div class="text-center bg-white p-5 rounded-4 shadow">
-    <h2 class="text-success">✅ Thank you for your feedback!</h2>
-    <p>The municipality will review your report soon.</p>
-
+  <h2 class="text-success">✅ Thank you for your feedback!</h2>
+  <p>Your report has been submitted to: <b>{{ authority }}</b></p>
+  <p>Authority Email: <span class="text-primary">{{ email }}</span></p>
+  <p class="mb-2">Estimated resolution time: <b>2 days</b></p>
+  <p class="mb-4 text-primary">Action is being taken. You will be updated soon!</p>
     <a href="{{ url_for('index') }}" class="btn btn-primary mt-3">Submit Another Report</a>
     <a href="{{ url_for('reports') }}" class="btn btn-secondary mt-3">View Reports</a>
-
   </div>
 </body>
 

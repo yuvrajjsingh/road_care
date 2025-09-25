@@ -68,6 +68,21 @@
           </select>
         </div>
         <div class="mb-3">
+          <label class="form-label">Select Authority</label>
+          <select name="authority" class="form-select" id="authority-select" required>
+            <option value="PWD">PWD</option>
+            <option value="LDA">LDA</option>
+            <option value="Nagar Nigam">Nagar Nigam</option>
+            <option value="Municipality">Municipality</option>
+            <option value="Urban development">Urban development</option>
+            
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Authority Email</label>
+          <input type="text" id="authority-email" class="form-control" value="pwd@example.com" readonly>
+        </div>
+        <div class="mb-3">
           <label class="form-label">Upload Photo (optional)</label>
           <input type="file" name="photo" class="form-control">
         </div>
@@ -91,6 +106,19 @@
 
 
   <script>
+    // Authority email mapping
+    const authorityEmails = {
+      "PWD": "pwd@gov.com",
+      "LDA": "lda@gov.com",
+      "Nagar Nigam": "nagarnigam@gov.com",
+      "Municipality": "municipality@gov.com",
+      "Urban development": "urbandev@gov.com"
+      
+    };
+    document.getElementById('authority-select').addEventListener('change', function() {
+      const selected = this.value;
+      document.getElementById('authority-email').value = authorityEmails[selected];
+    });
     // Initialize Leaflet map
     var map = L.map('map').setView([28.6139, 77.2090], 13); // Example: Delhi coordinates
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
