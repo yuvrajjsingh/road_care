@@ -13,32 +13,8 @@ A Python Flask web application that helps collect road feedback and generate rep
 - [Future Improvements](#futureimprovement)
 - [Technologies](#technologies)
 - [Author](#author)
-- [Screenshot](
--<img width=<img width="600" height="855" alt="Screenshot 2026-01-20 150119" src="https://github.com/user-attachments/assets/ff75cebd-57f2-4cc8-9234-ca54f7f5678d" />
-
-  <img width="600" height="855" alt="Screenshot 2026-01-20 150119" src="https://github.com/user-attachments/assets/afd3039c-7686-4d1f-acd3-707bd65df779" />
 
 
--<img width="600" height="879" alt="Screenshot 2026-01-20 151132" src="https://github.com/user-attachments/assets/012dde66-2476-45f3-b937-0979fceb75f6" />
-
-- )
-- [Technologies](python, flask, html/css, SQLite)
-- 
-- [Future Improvements](
-- Add user authentication and login system
-
-Generate downloadable reports (PDF/Excel)
-
-Improve UI with Bootstrap or Material Design
-
-Deploy to cloud (Heroku, AWS, or Azure))
-
-
-- [Author](Yuvraj Singh Yadav
-- [github] https://github.com/yuvrajjsingh
-- [Linkedin] https://www.linkedin.com/in/yuvraj-singh-ys1803?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
-
----
 
 ## About
 
@@ -56,6 +32,57 @@ This project demonstrates full-stack web development skills using Python and Fla
 - Uses Flask for backend and SQLite for database
 
 ---
+
+- ##Screenshots
+- ----  
+
+<img width="1286" height="945" alt="Screenshot 2026-01-20 145930" src="https://github.com/user-attachments/assets/89aa450b-2eb7-47bb-a7d8-7472ee2f58da" />
+
+
+<img width="1295" height="855" alt="Screenshot 2026-01-20 150119" src="https://github.com/user-attachments/assets/f75f7487-2173-4ad2-8bc9-80191f29ef25" />
+
+
+-><img width="1388" height="879" alt="Screenshot 2026-01-20 151132" src="https://github.com/user-attachments/assets/fb531076-9296-4be4-a818-3ee58a4853cd" />
+
+
+<img width="1502" height="400" alt="Screenshot 2026-01-20 162204" src="https://github.com/user-attachments/assets/b130834d-8f6d-4514-9044-81408b45a0ff" />
+
+- ---
+
+- 
+- ##Technologies
+- ---
+- python
+- flask
+- html/css
+- SQLite
+
+- ---
+
+- ##Future Improvements
+- ---
+
+- Add user authentication and login system
+
+Generate downloadable reports (PDF/Excel)
+
+Improve UI with Bootstrap or Material Design
+
+Deploy to cloud (Heroku, AWS, or Azure)
+
+----
+
+- ##Author
+- ---
+-
+- Yuvraj Singh Yadav
+- 
+- [github] https://github.com/yuvrajjsingh
+- [Linkedin] https://www.linkedin.com/in/yuvraj-singh-ys1803?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+
+---
+
+
 
 ## Installation
 
